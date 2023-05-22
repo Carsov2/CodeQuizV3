@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Code Quiz</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
-            integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/style.css" />
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<header>
+    <div class="center-content">
+        <h1><b>Coding Quiz Challenge</b></h1>
+        <h4>Here is a simple quiz made by: Carson Kennedy</h4>
+    </div>
+</header>
 
 <body>
-    
+    <section id="start-section">
+        <div class="center-content">
+            <button class="adjust">Start!</button>
+        </div>
+    </section>
+
+    <div class="center-content">
+        <h3>Time left: <span id="timer">60</span> seconds</h3>
+    </div>
+
+    <section id="quiz-container" style="display: none;">
+        <div id="q1" class="question">
+            <h2>Who is the best soccer player in the world?</h2>
+            <div class="button-container center-content">
+                <button class="correct-answer">Lionel Messi</button>
+                <button>Neymar Jr.</button>
+                <button>Cristiano Ronaldo</button>
+                <button>Kevin De Bruyne</button>
+            </div>
+        </div>
+
+        <div id="q2" class="question">
+            <h2>Who is the highest scoring basketball player of all time?</h2>
+            <div class="button-container center-content">
+                <button>Michael Jordan</button>
+                <button>Kobe Bryant</button>
+                <button>Karim Abdul Jabar</button>
+                <button class="correct-answer">Lebron James</button>
+            </div>
+        </div>
+
+        <div id="q3" class="question">
+            <h2>Who is the best Football Quarter Back of all time?</h2>
+            <div class="button-container center-content">
+                <button>Peyton Manning</button>
+                <button class="correct-answer">Tom Brady</button>
+                <button>Terry Bradshaw</button>
+                <button>Big Ben</button>
+            </div>
+        </div>
+
+        <div id="q4" class="question">
+            <h2>Who runs the family in the show: Peaky Blinders</h2>
+            <div class="button-container center-content">
+                <button class="correct-answer">Tommy Shelby</button>
+                <button>Arthur Shelby</button>
+                <button>Polly Gray</button>
+                <button>John Shelby</button>
+            </div>
+        </div>
+
+        <div id="q5" class="center-content question">
+            <h2>Who is the 'chosen one' in Star Wars according to George Lucas?</h2>
+            <div class="button-container center-content">
+                <button>Luke Skywalker</button>
+                <button class="correct-answer">Anakin Skywalker</button>
+                <button>Obi-Wan Kenobi</button>
+                <button>Darth Vader</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="end-section" style="display: none;">
+        <div class="center-content">
+            <h2>All done!</h2>
+            <h3>Your final score is <span id="final-score"></span></h3>
+            <h4>Enter your initials:</h4>
+            <input type="text" id="initials-input">
+            <button id="submit-button">Submit</button>
+        </div>
+    </section>
+
+    <section id="highscores-section" style="display: none;">
+        <div class="center-content">
+            <h2>Highscores</h2>
+            <ul id="highscores-list"></ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Wf5FsxNQf3z6tu7J+X3MjsXqf1fM27c+c6BXMR+BX2WhDxJn0p+yfPb+7Xz68xVJ" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
